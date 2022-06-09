@@ -12,7 +12,7 @@ module Binance
       end
 
       def verified_client(api_key, adapter)
-        Faraday.new(url: "#{BASE_URL}/api") do |conn|
+        Faraday.new(url: "#{BASE_URL}/") do |conn|
           conn.response :json, content_type: /\bjson$/
           conn.headers['X-MBX-APIKEY'] = api_key
           conn.adapter adapter
@@ -20,7 +20,7 @@ module Binance
       end
 
       def signed_client(api_key, secret_key, adapter)
-        Faraday.new(url: "#{BASE_URL}/api") do |conn|
+        Faraday.new(url: "#{BASE_URL}/") do |conn|
           conn.request :json
           conn.response :json, content_type: /\bjson$/
           conn.headers['X-MBX-APIKEY'] = api_key
