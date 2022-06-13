@@ -8,7 +8,7 @@ module Binance
         exchange_info:     'v1/exchangeInfo',
         depth:             'v1/depth',
         trades:            'v1/trades',
-        historical_trades: 'v1/historicalTrades',
+        historical_trades: 'api/v1/historicalTrades',
         agg_trades:        'v1/aggTrades',
         klines:            'v1/klines',
         twenty_four_hour:  'v1/ticker/24hr',
