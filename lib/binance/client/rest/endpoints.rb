@@ -8,7 +8,7 @@ module Binance
         exchange_info:     'v1/exchangeInfo',
         depth:             'v1/depth',
         trades:            'v1/trades',
-        historical_trades: 'v1/historicalTrades',
+        historical_trades: 'api/v1/historicalTrades',
         agg_trades:        'v1/aggTrades',
         klines:            'v1/klines',
         twenty_four_hour:  'v1/ticker/24hr',
@@ -16,13 +16,14 @@ module Binance
         book_ticker:       'v3/ticker/bookTicker',
 
         # Account API Endpoints
-        order:            'v3/order',
-        test_order:       'v3/order/test',
-        open_orders:      'v3/openOrders',
-        all_orders:       'v3/allOrders',
-        account:          'v3/account',
-        my_trades:        'v3/myTrades',
-        user_data_stream: 'v1/userDataStream',
+        order:            'api/v3/order',
+        test_order:       'api/v3/order/test',
+        open_orders:      'api/v3/openOrders',
+        all_orders:       'api/v3/allOrders',
+        account:          'api/v3/account',
+        my_trades:        'api/v3/myTrades',
+        user_data_stream: 'api/v1/userDataStream',
+        user_wallet_balances: 'sapi/v1/capital/config/getall',
 
         # Withdraw API Endpoints
         withdraw:         'v3/withdraw.html',

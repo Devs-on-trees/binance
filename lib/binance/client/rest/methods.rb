@@ -74,6 +74,9 @@ module Binance
         # #close_stream!
         { name: :close_stream!, client: :verified,
           action: :delete, endpoint: :user_data_stream },
+        # #user_wallet_balances
+        { name: :user_wallet_balances, client: :signed,
+          action: :get, endpoint: :user_wallet_balances },
 
         # Withdraw API Methods
         # #withdraw!
