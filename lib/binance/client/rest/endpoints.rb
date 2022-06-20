@@ -36,9 +36,8 @@ module Binance
         dust_log:         'wapi/v3/userAssetDribbletLog.html',
 
         # Subaccount API Endpoints
-        create_subaccount: 'sapi/v1/sub-account/virtualSubAccount',
-        list_subaccounts: 'sapi/v1/sub-account/list',
-        accounts_status: 'sapi/v1/sub-account/status',
+        create_subaccount: 'sapi/v1/broker/subAccount',
+        list_subaccounts: 'sapi/v1/broker/subAccount',
       }.freeze
     end
   end
