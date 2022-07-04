@@ -37,6 +37,7 @@ module Binance
 
         # Subaccount API Endpoints
         create_subaccount: 'sapi/v1/broker/subAccount',
+        create_api_keys: 'sapi/v1/broker/subAccountApi',
         list_subaccounts: 'sapi/v1/broker/subAccount',
       }.freeze
     end
