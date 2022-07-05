@@ -26,14 +26,19 @@ module Binance
         user_wallet_balances: 'sapi/v1/capital/config/getall',
 
         # Withdraw API Endpoints
-        withdraw:         'v3/withdraw.html',
-        deposit_history:  'v3/depositHistory.html',
-        withdraw_history: 'v3/withdrawHistory.html',
-        deposit_address:  'v3/depositAddress.html',
-        account_status:   'v3/accountStatus.html',
-        system_status:    'v3/systemStatus.html',
-        withdraw_fee:     'v3/withdrawFee.html',
-        dust_log:         'v3/userAssetDribbletLog.html'
+        withdraw:         'wapi/v3/withdraw.html',
+        deposit_history:  'wapi/v3/depositHistory.html',
+        withdraw_history: 'wapi/v3/withdrawHistory.html',
+        deposit_address:  'wapi/v3/depositAddress.html',
+        account_status:   'wapi/v3/accountStatus.html',
+        system_status:    'wapi/v3/systemStatus.html',
+        withdraw_fee:     'wapi/v3/withdrawFee.html',
+        dust_log:         'wapi/v3/userAssetDribbletLog.html',
+
+        # Subaccount API Endpoints
+        create_subaccount: 'sapi/v1/broker/subAccount',
+        create_api_keys: 'sapi/v1/broker/subAccountApi',
+        list_subaccounts: 'sapi/v1/broker/subAccount',
       }.freeze
     end
   end

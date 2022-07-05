@@ -77,6 +77,15 @@ module Binance
         # #user_wallet_balances
         { name: :user_wallet_balances, client: :signed,
           action: :get, endpoint: :user_wallet_balances },
+        # #create_subaccount
+        { name: :create_subaccount, client: :signed,
+          action: :post, endpoint: :create_subaccount },
+        # #create_api_keys
+        { name: :create_api_keys, client: :signed,
+          action: :post, endpoint: :create_api_keys },
+        # #list_subaccounts
+        { name: :list_subaccounts, client: :signed,
+          action: :get, endpoint: :list_subaccounts },
 
         # Withdraw API Methods
         # #withdraw!
