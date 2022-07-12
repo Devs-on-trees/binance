@@ -86,6 +86,9 @@ module Binance
         # #list_subaccounts
         { name: :list_subaccounts, client: :signed,
           action: :get, endpoint: :list_subaccounts },
+        # #internal_transfer
+        { name: :internal_transfer, client: :signed,
+          action: :post, endpoint: :internal_transfer },
 
         # Withdraw API Methods
         # #withdraw!

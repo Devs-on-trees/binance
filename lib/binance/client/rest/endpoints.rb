@@ -39,6 +39,7 @@ module Binance
         create_subaccount: 'sapi/v1/broker/subAccount',
         create_api_keys: 'sapi/v1/broker/subAccountApi',
         list_subaccounts: 'sapi/v1/broker/subAccount',
+        internal_transfer: 'sapi/v1/broker/transfer',
       }.freeze
     end
   end
