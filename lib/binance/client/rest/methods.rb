@@ -89,6 +89,12 @@ module Binance
         # #internal_transfer
         { name: :internal_transfer, client: :signed,
           action: :post, endpoint: :internal_transfer },
+        # #switch_ip_restriction
+        { name: :switch_ip_restriction, client: :signed,
+          action: :post, endpoint: :switch_ip_restriction },
+        # #add_ip_restriction:
+        { name: :add_ip_restriction, client: :signed,
+          action: :post, endpoint: :add_ip_restriction },
 
         # Withdraw API Methods
         # #withdraw!

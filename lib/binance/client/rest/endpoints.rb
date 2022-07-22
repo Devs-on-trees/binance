@@ -40,6 +40,8 @@ module Binance
         create_api_keys: 'sapi/v1/broker/subAccountApi',
         list_subaccounts: 'sapi/v1/broker/subAccount',
         internal_transfer: 'sapi/v1/broker/transfer',
+        switch_ip_restriction: 'sapi/v1/broker/subAccountApi/ipRestriction',
+        add_ip_restriction: 'sapi/v1/broker/subAccountApi/ipRestriction/ipList',
       }.freeze
     end
   end
