@@ -42,6 +42,7 @@ module Binance
         internal_transfer: 'sapi/v1/broker/transfer',
         switch_ip_restriction: 'sapi/v1/broker/subAccountApi/ipRestriction',
         add_ip_restriction: 'sapi/v1/broker/subAccountApi/ipRestriction/ipList',
+        change_commissions: 'sapi/v1/broker/subAccountApi/commission',
       }.freeze
     end
   end
