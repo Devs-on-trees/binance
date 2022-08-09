@@ -95,6 +95,9 @@ module Binance
         # #add_ip_restriction:
         { name: :add_ip_restriction, client: :signed,
           action: :post, endpoint: :add_ip_restriction },
+        # #change_commissions:
+        { name: :change_commissions, client: :signed,
+          action: :post, endpoint: :change_commissions },
 
         # Withdraw API Methods
         # #withdraw!
