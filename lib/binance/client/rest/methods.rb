@@ -98,6 +98,9 @@ module Binance
         # #change_commissions:
         { name: :change_commissions, client: :signed,
           action: :post, endpoint: :change_commissions },
+        # #burn_bnb_spot:
+        { name: :burn_bnb_spot, client: :signed,
+          action: :post, endpoint: :burn_bnb_spot },
 
         # Withdraw API Methods
         # #withdraw!

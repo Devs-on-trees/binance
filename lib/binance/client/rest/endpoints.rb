@@ -43,6 +43,7 @@ module Binance
         switch_ip_restriction: 'sapi/v1/broker/subAccountApi/ipRestriction',
         add_ip_restriction: 'sapi/v1/broker/subAccountApi/ipRestriction/ipList',
         change_commissions: 'sapi/v1/broker/subAccountApi/commission',
+        burn_bnb_spot: 'sapi/v1/broker/subAccount/bnbBurn/spot',
       }.freeze
     end
   end
