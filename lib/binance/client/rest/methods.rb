@@ -77,6 +77,9 @@ module Binance
         # #user_wallet_balances
         { name: :user_wallet_balances, client: :signed,
           action: :get, endpoint: :user_wallet_balances },
+        # #user_wallet_withdraw
+        { name: :user_wallet_withdraw, client: :signed,
+          action: :post, endpoint: :user_wallet_withdraw },
         # #create_subaccount
         { name: :create_subaccount, client: :signed,
           action: :post, endpoint: :create_subaccount },
