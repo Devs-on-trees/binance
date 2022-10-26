@@ -41,10 +41,13 @@ module Binance
         create_api_keys: 'sapi/v1/broker/subAccountApi',
         list_subaccounts: 'sapi/v1/broker/subAccount',
         internal_transfer: 'sapi/v1/broker/transfer',
+        get_transfers: 'sapi/v1/broker/transfer',
+        get_deposits: '/sapi/v1/broker/subAccount/depositHist',
         switch_ip_restriction: 'sapi/v1/broker/subAccountApi/ipRestriction',
         add_ip_restriction: 'sapi/v1/broker/subAccountApi/ipRestriction/ipList',
         change_commissions: 'sapi/v1/broker/subAccountApi/commission',
         burn_bnb_spot: 'sapi/v1/broker/subAccount/bnbBurn/spot',
+        burn_bnb_status: 'sapi/v1/broker/subAccount/bnbBurn/status',
       }.freeze
     end
   end
