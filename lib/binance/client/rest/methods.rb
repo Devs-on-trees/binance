@@ -92,6 +92,12 @@ module Binance
         # #internal_transfer
         { name: :internal_transfer, client: :signed,
           action: :post, endpoint: :internal_transfer },
+        # #get_transfers
+        { name: :get_transfers, client: :signed,
+          action: :get, endpoint: :get_transfers },
+        # #get_deposits
+        { name: :get_deposits, client: :signed,
+          action: :get, endpoint: :get_deposits },
         # #switch_ip_restriction
         { name: :switch_ip_restriction, client: :signed,
           action: :post, endpoint: :switch_ip_restriction },
@@ -104,6 +110,9 @@ module Binance
         # #burn_bnb_spot:
         { name: :burn_bnb_spot, client: :signed,
           action: :post, endpoint: :burn_bnb_spot },
+        # #burn_bnb_status:
+        { name: :burn_bnb_status, client: :signed,
+          action: :get, endpoint: :burn_bnb_status },
 
         # Withdraw API Methods
         # #withdraw!
