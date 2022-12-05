@@ -138,7 +138,17 @@ module Binance
           action: :get, endpoint: :withdraw_fee },
         # dust_log
         { name: :dust_log, client: :withdraw,
-          action: :get, endpoint: :dust_log }
+          action: :get, endpoint: :dust_log },
+        # Staking API Methods
+        # #get_staking_position
+        { name: :get_staking_position, client: :signed,
+          action: :get, endpoint: :get_staking_position},
+        # #get_staking_history
+        { name: :get_staking_history, client: :signed,
+          action: :get, endpoint: :get_staking_history},
+        # #get_product_list
+        { name: :get_product_list, client: :signed,
+          action: :get, endpoint: :get_product_list}
       ].freeze
     end
   end

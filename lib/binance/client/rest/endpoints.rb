@@ -48,6 +48,11 @@ module Binance
         change_commissions: 'sapi/v1/broker/subAccountApi/commission',
         burn_bnb_spot: 'sapi/v1/broker/subAccount/bnbBurn/spot',
         burn_bnb_status: 'sapi/v1/broker/subAccount/bnbBurn/status',
+
+        # Staking API Endpoints
+        get_staking_position: 'sapi/v1/staking/position',
+        get_staking_history: 'sapi/v1/staking/stakingRecord',
+        get_product_list: 'sapi/v1/staking/productList',
       }.freeze
     end
   end
