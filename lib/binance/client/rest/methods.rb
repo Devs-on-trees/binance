@@ -82,7 +82,7 @@ module Binance
           action: :post, endpoint: :user_wallet_withdraw },
         # #withdraw_history
         { name: :withdrawal_history, client: :signed,
-          action: :post, endpoint: :withdrawal_history },
+          action: :get, endpoint: :withdrawal_history },
         # #create_subaccount
         { name: :create_subaccount, client: :signed,
           action: :post, endpoint: :create_subaccount },
