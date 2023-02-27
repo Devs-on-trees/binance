@@ -20,7 +20,7 @@ module Binance
       end
 
       def signed_client(api_key, secret_key, adapter)
-        Faraday.new(url: "#{BASE_URL}/") do |conn|
+        Faraday.new(url: "#{BASE_URL}/", proxy: ENV["QUOTAGUARDSTATIC_URL"]) do |conn|
           conn.request :json
           conn.response :json, content_type: /\bjson$/
           conn.headers['X-MBX-APIKEY'] = api_key
