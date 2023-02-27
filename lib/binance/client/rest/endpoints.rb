@@ -25,6 +25,7 @@ module Binance
         user_data_stream: 'api/v1/userDataStream',
         user_wallet_balances: 'sapi/v1/capital/config/getall',
         user_wallet_withdraw: 'sapi/v1/capital/withdraw/apply',
+        withdraw_history:     'sapi/v1/capital/withdraw/history',
 
         # Withdraw API Endpoints
         withdraw:         'wapi/v3/withdraw.html',
